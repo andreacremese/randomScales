@@ -1,6 +1,6 @@
 import * as LogicLibrary from "./logic";
 
-function startApp() {
+function changeScale() {
     var scale = document.getElementById("current_scale");
     var alteration = document.getElementById("current_alteration");
 
@@ -8,4 +8,4 @@ function startApp() {
     alteration!.innerText = LogicLibrary.ScalesGenerator.getAlteration();
 }
 
-document.getElementById("button")!.addEventListener('click',startApp);
+document.getElementById("button")!.addEventListener('click',changeScale);

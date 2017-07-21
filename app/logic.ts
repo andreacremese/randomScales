@@ -1,4 +1,6 @@
-class Logic {
+export { ScalesGenerator }
+
+class ScalesGenerator {
     private static scales : string[]  = ["A", "B" , "C", "D", "E", "F", "G"];
     private static accidents : string[] = ["", "#", "b"];
     private static typeOfScales : string[]  = ["maj", "min" , "dom"];

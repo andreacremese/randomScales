@@ -6,11 +6,13 @@
     "strict": true,                            /* Enable all strict type-checking options. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
     "watch": true,
-    "outDir": "js",                        /* Redirect output structure to the directory. */
-    //"outFile": "js/app.js"                       /* Concatenate and emit output to single file. */
+    "outDir": "js",                       /* Redirect output structure to the directory. */
+    // "outFile": "js/app.js",                       /* Concatenate and emit output to single file. */
 
-    "module": "commonjs",                     /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-    "experimentalDecorators": true        /* Enables experimental support for ES7 decorators. */
+    "module": "commonjs",                  /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "moduleResolution": "node"            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+
+    //"experimentalDecorators": true        /* Enables experimental support for ES7 decorators. */
     
      //"lib": [ "es5" , "dom"]                            /* Specify library files to be included in the compilation:  */
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
@@ -36,7 +38,6 @@
     // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
 
     /* Module Resolution Options */
-    // "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
     // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */

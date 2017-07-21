@@ -28,6 +28,19 @@
                 <span id="current_alteration">maj</span>
             </h1>
         </div>
-        <script src="js/app.js"></script>
+        <script src="node_modules/systemjs/dist/system.js"></script>
+        <script>
+            System.config({
+                meta: {
+                    format : 'cjs'
+                },
+                packages : {
+                    '.' : {
+                        defaultExtension : 'js'
+                    }
+                }
+            });
+            System.import('./js/app.js');
+        </script>
 </body>
 </html>

@@ -5,8 +5,7 @@
     "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
     "strict": true,                            /* Enable all strict type-checking options. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
-    "watch": true,
-    "outDir": "js",                       /* Redirect output structure to the directory. */
+    "watch": true,                       /* Redirect output structure to the directory. */
     // "outFile": "js/app.js",                       /* Concatenate and emit output to single file. */
 
     "module": "commonjs",                  /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
@@ -53,8 +52,5 @@
 
     /* Experimental Options */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
-  },
-  "files": [
-    "app/app.ts"
-  ]
+  }
 }

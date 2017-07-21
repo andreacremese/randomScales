@@ -1,19 +1,22 @@
+import  *  as Scales from "./scales";
+
 export { ScalesGenerator }
 
 class ScalesGenerator {
-    private static scales : string[]  = ["A", "B" , "C", "D", "E", "F", "G"];
-    private static accidents : string[] = ["", "#", "b"];
-    private static typeOfScales : string[]  = ["maj", "min" , "dom"];
     
     constructor() {
         throw new Error("cannot instantiate Logic class");
     }
 
     public static getScale() : string{
-        return this.scales[Math.floor(Math.random() * this.scales.length)] + this.accidents[Math.floor(Math.random() * this.accidents.length)] ;
+        let numberOfRoots = Object.keys(Scales.Roots).length / 2;
+        let numberOfAccidents = Object.keys(Scales.Accidents).length / 2;
+
+        return Scales.Roots[Math.floor(Math.random() * numberOfRoots)] + Scales.Accidents[Math.floor(Math.random() * numberOfAccidents)]
     } 
 
     public static getAlteration() : string {
-        return this.typeOfScales[Math.floor(Math.random() * this.typeOfScales.length)]
+        let numberOfAccidents = Object.keys(Scales.Accidents).length / 2;
+        return Scales.Alterations[Math.floor(Math.random() * numberOfAccidents)]; 
     }
 }

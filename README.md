@@ -8,7 +8,6 @@ I needed a randomizer to exercise on scales during warmup. Here it is
 
 # todo
 
-
 * add gulp script for test, build (rather than running tsc inside the folders...)
+* more tests
 * deploy
-* research more into exports

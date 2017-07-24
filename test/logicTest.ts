@@ -3,7 +3,7 @@ import * as sut from "../app/logic";
 import * as Scales from "../app/scales";
 
 describe("Test for logic", () => {
-    it("should return a string with a root", () =>{
+    it("should return a string with a root ", () =>{
         // arrange
         var foundRoot = false;
         // act

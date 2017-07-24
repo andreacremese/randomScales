@@ -14,7 +14,8 @@ Tests have intellisense!
 
 # todo
 
-* add gulp script for test, build (rather than running tsc inside the folders...)
+* add gulp script for test, build (rather than running tsc inside the folders)
+* concatenate / minify files
 * deploy
 * selenium
 

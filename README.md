@@ -6,11 +6,17 @@ I needed a randomizer to exercise on scales during warmup. Here it is
 `tsc` inside the app folder builds the app
 `tsc` inside the tests builds the test
 
+`jasmine specs/test/logicTest.js` to run the tests
+
+Tests have intellisense!
+
+
+
 # todo
 
 * add gulp script for test, build (rather than running tsc inside the folders...)
-* more tests
 * deploy
+* selenium
 
 https://app.pluralsight.com/player?course=typescript-getting-started&author=brice-wilson&name=typescript-getting-started-m1&clip=6&mode=live
 

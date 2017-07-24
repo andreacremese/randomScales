@@ -59,4 +59,6 @@ internal/
 .idea
 yarn.lock
 package-lock.json
+
 js/*
+specs/*

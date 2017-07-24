@@ -2,7 +2,7 @@
 import * as sut from "../app/logic";
 import * as Scales from "../app/scales";
 
-describe("Test for logic app", () => {
+describe("Test for logic", () => {
     it("should return a string with a root", () =>{
         // arrange
         var foundRoot = false;
@@ -16,5 +16,15 @@ describe("Test for logic app", () => {
             }
         }
         expect(foundRoot).toBeTruthy("Could not find scale");
+    });
+
+    it("should throw when instantiated asd s", () => {
+        var hasThown = false;
+        try {
+            var a = new sut.ScalesGenerator();
+        } catch (e) {
+            hasThown = true;
+        }
+        expect(hasThown).toBe(true);
     })  
 })

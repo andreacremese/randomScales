@@ -1,11 +1,10 @@
-import * as LogicLibrary from "./logic";
+import { ScalesLib } from "./ScalesLib";
+import { Scale } from "./Scale";
 
-function changeScale() {
-    var scale = document.getElementById("current_scale");
-    var alteration = document.getElementById("current_alteration");
-    
-    scale!.innerText = LogicLibrary.ScalesGenerator.getScale();
-    alteration!.innerText = LogicLibrary.ScalesGenerator.getAlteration();
+function generateRandomScale() {
+    var current = document.getElementById("current_exercise");
+    var scale = ScalesLib.getRandomScale()
+    current!.innerText = scale.toString();
 }
 
-document.getElementById("button")!.addEventListener('click',changeScale);
+document.getElementById("button")!.addEventListener('click', generateRandomScale);

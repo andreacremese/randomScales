@@ -5,8 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "gulp",
-    "test" : "gulp run-tests",
-    "tests-reload":  "gulp run-tests-live"
+    "test" : "gulp run-tests"
   },
   "author": "",
   "license": "ISC",

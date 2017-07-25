@@ -17,7 +17,7 @@ enum Roots {
  * Available accidents in the temperate system 
  */
 enum Accidents {
-    "", 
+    " ", 
     "#", 
     "b"
 }

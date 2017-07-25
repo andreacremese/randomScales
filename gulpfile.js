@@ -58,7 +58,7 @@ gulp.task('cleanup-test', function () {
 gulp.task('run-tests', () => runSequential(['transpile-tests', 'run-all-test', 'cleanup-test']));
 
 gulp.task('run-tests-live', ['run-tests'], function() {
-  gulp.watch('src/*', ['run-tests']);
+  gulp.watch(['src/*','test/specs/*'], ['run-tests']);
 });
 
 

@@ -7,7 +7,7 @@ var server = require('gulp-server-livereload');
 gulp.task('transpile', function () {
     var tsResult = gulp.src('src/**/*.ts')
         .pipe(tsProject())
-        return tsResult.js.pipe(gulp.dest('js'));
+        return tsResult.js.pipe(gulp.dest('js')).pipe(livereload());
 });
 
 gulp.task('watch', ['transpile'], function() {
@@ -32,6 +32,8 @@ gulp.task('webserver', ['livereload'], function() {
 });
 
 gulp.task('default',['webserver']);
+
+livereload({ start: true })
 
 // testing
 

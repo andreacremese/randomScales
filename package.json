@@ -4,7 +4,7 @@
   "description": "random selector for scales",
   "main": "index.html",
   "scripts": {
-    "start": "http-server"
+    "start": "gulp"
   },
   "author": "",
   "license": "ISC",

@@ -10,13 +10,9 @@ gulp.task('transpile', function () {
         return tsResult.js.pipe(gulp.dest('js')).pipe(livereload());
 });
 
-gulp.task('watch', ['transpile'], function() {
-    gulp.watch('src/*', ['transpile']);
-});
-
-gulp.task('livereload', ['watch'], function() {
+gulp.task('livereload', ['transpile'], function() {
   livereload.listen();
-  gulp.watch('src/*', ['watch']);
+  gulp.watch('src/*', ['transpile']);
 });
 
 // this is the entry point for webserver with livereload
@@ -25,7 +21,7 @@ gulp.task('webserver', ['livereload'], function() {
     .pipe(server({
         livereload : true,
         directoryListing: false,
-        open: true,
+        open: false,
         port: 4000,
         fallback: 'index.html'
     }));

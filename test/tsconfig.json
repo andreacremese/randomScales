@@ -1,10 +1,11 @@
 {  
     "extends": "../tsconfig.base",
     "compilerOptions": {
-        "outDir": "../specs",
-        "sourceMap": false
+        "outDir": "bin-temp",
+        "sourceMap": false,
+        "isolatedModules" : true
     },
     "include": [
-        "./**/*"
+        "specs/*"
     ]
 } 

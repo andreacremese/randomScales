@@ -14,7 +14,13 @@ Tests have intellisense!
 
 # todo
 
-* add gulp script for test, build (rather than running tsc inside the folders)
+* add gulp script for test
+    
+    * watcher for test
+    * run a single test
+
+* tsconfig.base does not seem to work
+* find a solution for `import * as Scales from "../../src/scales";`
 * concatenate / minify files
 * deploy
 * selenium

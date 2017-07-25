@@ -1,6 +1,6 @@
-/// <reference path="../typings/globals/jasmine/index.d.ts" />
-import * as sut from "../app/logic";
-import * as Scales from "../app/scales";
+/// <reference path="../../typings/globals/jasmine/index.d.ts" />
+import * as sut from "../../src/logic";
+import * as Scales from "../../src/scales";
 
 describe("Test for logic", () => {
     it("should return a string with a root ", () =>{
@@ -15,7 +15,7 @@ describe("Test for logic", () => {
                 break;
             }
         }
-        expect(foundRoot).toBeTruthy("Could not find scale");
+        expect(foundRoot).toBeTruthy("Could not find scale ");
     });
 
     it("should throw when instantiated asd s", () => {

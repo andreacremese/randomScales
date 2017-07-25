@@ -55,8 +55,11 @@ gulp.task('cleanup-test', function () {
   return del(['test/bin/**/*','test/bin']);
 });
 
-gulp.task('run-tests',() => runSequential(['transpile-tests', 'run-all-test', 'cleanup-test']));
+gulp.task('run-tests', () => runSequential(['transpile-tests', 'run-all-test', 'cleanup-test']));
 
+gulp.task('run-tests-live', ['run-tests'], function() {
+  gulp.watch('src/*', ['run-tests']);
+});
 
 
 

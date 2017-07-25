@@ -11,7 +11,7 @@ class ScalesGenerator {
     public static getScale() : string{
         let numberOfRoots = Object.keys(Scales.Roots).length / 2;
         let numberOfAccidents = Object.keys(Scales.Accidents).length / 2;
-
+        
         return Scales.Roots[Math.floor(Math.random() * numberOfRoots)] + Scales.Accidents[Math.floor(Math.random() * numberOfAccidents)]
     } 
 

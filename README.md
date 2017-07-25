@@ -7,8 +7,8 @@ Tests have intellisense!
 
 # todo
 
-* add logic to only serve Jim's compliant scales (e.g. Fb or B# usually makes no sense).
-* add logic to figure out the accidents per each scale.
+* add logic to only serve useful scales (e.g. Fb or B# usually makes no sense).
+* add logic to figure out the accidents per each scale (on demand).
 * structure folders for files
 * modularize app
 

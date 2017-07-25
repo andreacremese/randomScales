@@ -10,6 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "systemjs": "^0.20.15"
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.1",
+    "systemjs": "^0.20.15",
+    "typescript": "^2.4.2"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1"
   }
 }

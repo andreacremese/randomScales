@@ -5,7 +5,7 @@ export { Roots, Accidents, Alterations }
  */
 enum Roots {
     "A", 
-    "B" , 
+    "B", 
     "C", 
     "D", 
     "E", 
@@ -17,7 +17,7 @@ enum Roots {
  * Available accidents in the temperate system 
  */
 enum Accidents {
-    " ", 
+    "", 
     "#", 
     "b"
 }

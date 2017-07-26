@@ -7,14 +7,15 @@ Tests have intellisense!
 
 # todo
 
-* add logic to only serve useful scales (e.g. Fb or B# usually makes no sense).
+
 * add logic to figure out the accidents per each scale (on demand).
+* private setters, public getters to improve tests for random scale
+* deploy
 * structure folders for files
 * modularize app
 
 * gulp to run a single test file
 * concatenate / minify files
-* deploy
 * selenium
 * tsconfig.base does it work in gulp?
 

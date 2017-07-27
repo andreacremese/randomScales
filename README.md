@@ -7,10 +7,14 @@ Tests have intellisense!
 
 # todo
 
+* deploy 
+
+    * git?
+    * ftp (exclude js)?
+
 
 * add logic to figure out the accidents per each scale (on demand).
 * private setters, public getters to improve tests for random scale
-* deploy
 * structure folders for files
 * modularize app
 

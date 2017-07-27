@@ -47,7 +47,7 @@ describe("Test for Scales lib", () => {
                 break;
             }
         }
-        expect(foundRoot).toBeTruthy("Could not find scale ");
+        expect(foundRoot).toBeTruthy(`Could not find root in ${result}`);
     });
 
     it("should return a scale with a known string as accident ", () =>{
@@ -62,7 +62,8 @@ describe("Test for Scales lib", () => {
                 break;
             }
         }
-        expect(foundAccident).toBeTruthy("Could not find accident");
+        if (result[1] == "") foundAccident = true;
+        expect(foundAccident).toBeTruthy(`Could not find accident in ${result}`);
     });
 
 
@@ -78,6 +79,6 @@ describe("Test for Scales lib", () => {
                 break;
             }
         }
-        expect(foundAccident).toBeTruthy("Could not find alteration");
+        expect(foundAccident).toBeTruthy(`Could not find alteration in ${result}`);
     });
-})
+}) 

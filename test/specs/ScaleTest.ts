@@ -62,7 +62,7 @@ describe("Test for Scales lib", () => {
                 break;
             }
         }
-        if (result[1] == "") foundAccident = true;
+        if (result[1] == " ") foundAccident = true;
         expect(foundAccident).toBeTruthy(`Could not find accident in ${result}`);
     });
 

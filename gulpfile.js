@@ -15,7 +15,7 @@ gulp.task('transpile', () => {
 
 gulp.task('livereload', ['transpile'], function() {
   livereload.listen();
-  gulp.watch('src/*', ['transpile']);
+  gulp.watch(['src/*','index.html'], ['transpile']);
 });
 
 // this is the entry point for webserver with livereload

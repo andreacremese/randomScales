@@ -1,7 +1,8 @@
 # b4
 
-* start app  `gulp`
-* start tests  `gulp tests-live`
+* start app  `gulp`.
+* start tests  `gulp tests-live`.
+* start `code .`.
 
 # show + tell
 
@@ -11,7 +12,7 @@
 * show the terminal on side
 * introduce intellisense.
 * play with scale.toString() and show type checking.
-* add a new method to string.
+* add a new method to return a string.
 
     ```
     public getRoot() : string {
@@ -19,7 +20,8 @@
     }
     ```
 
-* tests!
+* show type checking!
+* tests (and type checking)
 
     ```
     it ("should have a getRoot method", () => {

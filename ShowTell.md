@@ -10,8 +10,9 @@
 * introduce `Scale.ts` and `app.ts`.
 * introduce `js` transpiling.
 * show the terminal on side
-* introduce intellisense.
+* introduce code completion and type inference.
 * play with scale.toString() and show type checking.
+* show adding comments to the code.
 * add a new method to return a string.
 
     ```

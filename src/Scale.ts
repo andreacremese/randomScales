@@ -23,6 +23,10 @@ class Scale {
         return `${Roots[this.root]}${Accidents[this.accident]} ${Alterations[this.alteration]}`;
     }
 
+
+
+    //////// static methods
+
     public static getRandomScale() : Scale  {
         let root : Roots;
         let accident : Accidents;
@@ -32,7 +36,7 @@ class Scale {
         } while (!this.isValidAccident(root,accident));
 
         return new Scale(root, accident, this.getRandomAlteration());
-    }
+    }   
 
     // A Bb B C C# D Eb E F F# G Ab 
     public static isValidAccident(root1 : Roots, accident : Accidents) {

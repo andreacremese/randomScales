@@ -16,6 +16,7 @@ var Scale = (function () {
     Scale.prototype.toString = function () {
         return "" + ScalesEnums_1.Roots[this.root] + ScalesEnums_1.Accidents[this.accident] + " " + ScalesEnums_1.Alterations[this.alteration];
     };
+    //////// static methods
     Scale.getRandomScale = function () {
         var root;
         var accident;

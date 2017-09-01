@@ -23,6 +23,17 @@ class Scale {
         return `${Roots[this.root]}${Accidents[this.accident]} ${Alterations[this.alteration]}`;
     }
 
+    public static getRandomScale() : Scale  {
+        let root : Roots;
+        let accident : Accidents;
+        do {
+            root = this.getRandomRoot();
+            accident = this.getRandomAccident();
+        } while (!this.isValidAccident(root,accident));
+
+        return new Scale(root, accident, this.getRandomAlteration());
+    }
+
     // A Bb B C C# D Eb E F F# G Ab 
     public static isValidAccident(root1 : Roots, accident : Accidents) {
         
@@ -53,16 +64,5 @@ class Scale {
     private static getRandomAccident() : Accidents {
         let numberOfAccidents = Object.keys(Accidents).length / 2;
         return Math.floor(Math.random() * numberOfAccidents);
-    }
-
-    public static getRandomScale() : Scale  {
-        let root : Roots;
-        let accident : Accidents;
-        do {
-            root = this.getRandomRoot();
-            accident = this.getRandomAccident();
-        } while (!this.isValidAccident(root,accident));
-
-        return new Scale(root, accident, this.getRandomAlteration());
     }
 }

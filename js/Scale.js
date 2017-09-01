@@ -16,6 +16,15 @@ var Scale = (function () {
     Scale.prototype.toString = function () {
         return "" + ScalesEnums_1.Roots[this.root] + ScalesEnums_1.Accidents[this.accident] + " " + ScalesEnums_1.Alterations[this.alteration];
     };
+    Scale.getRandomScale = function () {
+        var root;
+        var accident;
+        do {
+            root = this.getRandomRoot();
+            accident = this.getRandomAccident();
+        } while (!this.isValidAccident(root, accident));
+        return new Scale(root, accident, this.getRandomAlteration());
+    };
     // A Bb B C C# D Eb E F F# G Ab 
     Scale.isValidAccident = function (root1, accident) {
         var allowedAccidents = {};
@@ -40,15 +49,6 @@ var Scale = (function () {
     Scale.getRandomAccident = function () {
         var numberOfAccidents = Object.keys(ScalesEnums_1.Accidents).length / 2;
         return Math.floor(Math.random() * numberOfAccidents);
-    };
-    Scale.getRandomScale = function () {
-        var root;
-        var accident;
-        do {
-            root = this.getRandomRoot();
-            accident = this.getRandomAccident();
-        } while (!this.isValidAccident(root, accident));
-        return new Scale(root, accident, this.getRandomAlteration());
     };
     return Scale;
 }());

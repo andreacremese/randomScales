@@ -22,6 +22,11 @@
     ```
 
 * show type checking!
+* add a comment
+        /**
+            * gets only the root of the scale, rather then the full kaboodle!
+        */
+
 * tests (and type checking)
 
     ```

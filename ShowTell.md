@@ -6,6 +6,11 @@
 * start `code .`.
 
 
+* start `IntelliJ`
+* open `Smartsheet` for the images
+* navigate to `index.html`
+
+
 # show + tell
 
 ## Intro

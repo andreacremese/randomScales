@@ -1,16 +1,23 @@
-# b4
+# B4 presentation start
 
+* checkout `master`
 * start app  `gulp`.
 * start tests  `gulp tests-live`.
 * start `code .`.
 
+
 # show + tell
 
+## Intro
 * introduce app function.
 * introduce `Scale.ts` and `app.ts`.
 * introduce `js` transpiling.
 * introduce `tsconfig.json` and `noImplicitAny`.
 * show the terminal on side
+
+
+## Code Completion (at code time)
+
 * introduce code completion and type inference.
 * play with scale.toString() and show type checking.
 * show adding comments to the code.
@@ -41,8 +48,34 @@
     });
     ```
 
-    
-#wrap up
+
+# noImplicitAny - risking the APIs (and regression bugs)
+
+* switch to `noImplicitAny` false. Add method to Scale that takes one parameter that is any.
+
+    ```
+    public printToLowerCase(thing ) {
+        console.log(thing.toLowerCase());
+    }
+    ```
+
+* Use it in the app, such as
+
+    ```
+    var mistery = scale.printToLowerCase("a string");
+    ```
+
+* But this may happen as well:
+
+    ```    
+    /// meanwhile, somewhere else in the code, in another branch.....
+    var mistery2 = scale.printToLowerCase(["an array", "of strings"]);
+    ```
+
+* No error in transpiling! Switch back `noImplicitAny`
+
+
+# wrap up
 
 * noImplicitAny
 * code completion!

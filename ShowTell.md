@@ -9,6 +9,7 @@
 * introduce app function.
 * introduce `Scale.ts` and `app.ts`.
 * introduce `js` transpiling.
+* introduce `tsconfig.json` and `noImplicitAny`.
 * show the terminal on side
 * introduce code completion and type inference.
 * play with scale.toString() and show type checking.
@@ -39,3 +40,9 @@
         expect(result).toBe("A","string representation of scale does not match spec");
     });
     ```
+
+    
+#wrap up
+
+* noImplicitAny
+* code completion!

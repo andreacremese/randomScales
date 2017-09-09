@@ -6,6 +6,11 @@
 * start `code .`.
 
 
+* start `IntelliJ`
+* open `Smartsheet` for the images
+* navigate to `index.html`
+
+
 # show + tell
 
 ## Intro
@@ -23,7 +28,7 @@
 * show adding comments to the code.
 * add a new method to return a string.
 
-    ```
+    ``` Scales.ts
     public getRoot() : string {
         return Roots[this.root];
     }
@@ -37,7 +42,7 @@
 
 * tests (and type checking)
 
-    ```
+    ``` testScales.ts
     it ("should have a getRoot method", () => {
         // arrange
         var sut = new Scale(Roots.A, Accidents.b, Alterations.maj );
@@ -62,17 +67,23 @@
 * Use it in the app, such as
 
     ```
-    var mistery = scale.printToLowerCase("a string");
+
+    var mystery = scale.printToLowerCase("AnoTHer StrIng");
+    console.log(mystery);
     ```
 
 * But this may happen as well:
 
     ```    
     /// meanwhile, somewhere else in the code, in another branch.....
-    var mistery2 = scale.printToLowerCase(["an array", "of strings"]);
+    var mystery2 = scale.printToLowerCase(["an array", "of strings"]);
     ```
 
 * No error in transpiling! Switch back `noImplicitAny`
+
+* target ES5 VS ES 6
+
+
 
 
 # wrap up
